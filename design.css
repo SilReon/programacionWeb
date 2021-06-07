@@ -1,48 +1,14 @@
-body{
-	background-color: black;
-}
-
-.titulo{
-	text-align: center;
-	color: #df1414; 
-	cursor: default; 
-	font-family: 'Reggae One', cursive; 
-	font-size: 3em
-}
-
-.cuerpo{
-	margin: 0 3em; 
-	padding: 0.9em;
-}
-
-.cuerpo_texto{
-	text-align: center; 
-	color: #d98d21; 
-	font-size: 1.5em;
-	cursor: default; 
-	font-family: 'Mate SC', serif;
-}
-
-.subtitulo{
-	color: #d98d21; 
-	font-size: 1.5em;
-	cursor: default; 
-	font-family: 'Mate SC', serif;
-}
-
-.subtitulo_lista{
-	text-align: center; 
-	color: #d98d21; 
-	font-size: 1.5em;
-	cursor: default; 
-	font-family: 'Mate SC', serif;
+.menu{
+	position: fixed;
+	background-color: blue;
+	height: 1.7em;
+	top: 0;
+	opacity: 1;
+	width: 100%;
 }
 
 .cajaimg{
+	position: relative;
+	top: 5em;
 	text-align: center;
-}
-
-.cajaimg_image{
-	border-radius:1.5em; 
-	margin: 0 0 1.5em 0
 }
