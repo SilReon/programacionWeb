@@ -1,14 +1,56 @@
-.menu{
+header {
+	width:100%; 
+	overflow:hidden;
+	height: 2.8em;
 	position: fixed;
+	z-index: 1000;
+}
+
+body {
+  background-color: #ffdd90;
+  background-image: url("");
+}
+
+.menu{
 	background-color: blue;
-	height: 1.7em;
+	height: 2.8em;
 	top: 0;
 	opacity: 1;
 	width: 100%;
 }
 
+
 .cajaimg{
 	position: relative;
 	top: 5em;
 	text-align: center;
+	z-index: 900;
 }
+
+.cajaimg_imagen{
+	width: 18em;
+	height: 21em; /*34em*/   
+	border-radius: 5em;
+	border: 4px groove black;
+
+}
+
+.caja_contenido{
+	position: relative;
+	background-color: skyblue;
+	top: 7em;
+	left: 20em;
+	border-radius: 15em;
+	width: 50%;
+	height: 12em;
+	box-shadow: 0.24em 0.24em 3.5em  #338db0 inset;
+}
+
+.caja_contenido--texto{
+	padding: 1em 0;
+	text-align: center;
+	font-size: 1.6em;
+	font-weight: bolder;
+	font-family: 'Lobster', cursive;
+}
+
