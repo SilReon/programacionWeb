@@ -41,8 +41,8 @@ li{
 body {
   background-color: white;
   background-repeat: repeat;
- 	background-image: url(/home/silreon/Escritorio/programacionWeb/bg_foto.jpg);
-
+ 	background-image: url(https://raw.githubusercontent.com/SilReon/programacionWeb/main/bg_foto.jpg);
+ /* /home/silreon/Escritorio/programacionWeb/bg_foto.jpg */
 }
 
 /* NAV */
@@ -128,7 +128,7 @@ body {
 	font-family: 'Permanent Marker', cursive;
 	position: relative;
 	background-position: center;
-	background-image: url("/home/silreon/Escritorio/programacionWeb/bg_div.png");
+	background-image: url("https://raw.githubusercontent.com/SilReon/programacionWeb/main/bg_div.png");/* /home/silreon/Escritorio/programacionWeb/bg_div.png */
 	background-repeat: repeat;
 	padding-left: 1.5vw;
 	border-radius: 2em;
