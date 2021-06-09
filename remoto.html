@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css_remoto.css">
+<body>
+	
+	<footer>
+		<fieldset>
+		<legend>CONTACTO</legend>
+		<form>
+			<div>
+			<label class="label_input" for="nombre">NOMBRE</label>
+			<input type="text" name="nombre" id="nombre" placeholder="Ejm:Juana Panchita" required> 
+			<p class="verificacion" id="verificacion_nombre">✔</p>
+			</div>
+
+			<div>
+			<label class="label_input" for="apellido">APELLIDO</label>
+			<input type="text" name="apellido" id="apellido" placeholder="Ejm:Alvarez Quijada" required>
+			<p class="verificacion" id="verificacion_apellido">✔</p>
+			</div>
+
+			<div>
+			<label class="label_input" for="direccion">DIRECCION</label>
+			<input type="text" name="direccion" id="direccion" placeholder="Ejm:Jr. Ignacio Cossio *** El Agustino " required>	
+			<p class="verificacion" id="verificacion_direccion">✔</p>
+			</div>
+
+			<div>
+			<label class="label_input" for="edad">EDAD</label>
+			<input type="number" name="edad" id="edad" min="0" max="100" step="1" required>
+			<p class="verificacion" id="verificacion_edad">✔</p>
+			</div>
+
+			<div>
+			<label class="label_input" for="profesion">PROFESION</label>
+			<input type="text" name="profesion" id="profesion" placeholder="Ejm: Ing. Sistemas " required>
+			<p class="verificacion" id="verificacion_profesion">✔</p>
+			</div>
+
+			<div>
+			<label class="label_input" for="correo">CORREO</label>
+			<input type="email" name="correo" id="correo" placeholder="Ejm: alberti***@***.com" required>
+			<p class="verificacion" id="verificacion_correo">✔</p>	
+			</div>
+
+			<div id="div_sexo">
+			<label for="sexo" id="label_sexo">SEXO</label>
+			<label>
+				<br>
+				<label class="label_sexo--opcion">HOMBRE</label><input type="radio" name="sexo" id="sexo" value="m">
+				<br>
+				<label class="label_sexo--opcion">MUJER</label><input type="radio" name="sexo" id="sexo" value="f">
+				<br>
+				<label class="label_sexo--opcion">N.A</label><input type="radio" name="sexo" id="sexo" value="none">
+			</label>
+			</div>
+
+			<div id="div_ocupacion">
+				<label for="ocupacion" id="label_ocupacion">OCUPACION</label>
+				<label>ESTUDIANTE</label><input type="checkbox" id="ocupacion" name="ocupacion" value="estudiante">
+				<label>FREELANCER</label><input type="checkbox" id="ocupacion" name="ocupacion" value="freelancer">
+				<label>TRABAJADOR</label><input type="checkbox" id="ocupacion" name="ocupacion" value="trabajador">
+				<br>
+				<div id="div_ocupacion--otro">
+				<label class="label_input">OTRO</label>
+				<input type="text" name="otro" placeholder="Especifique">
+				</div>
+			</div>
+
+			<div>
+			<label class="label_textArea" for="hobby">HOBBY</label>
+			<textarea name="hobby" id="hobby"></textarea>
+			<p class="verificacion verificacion_textarea" id="verificacion_hobby">✔</p>
+			</div>
+
+			<div>
+			<label class="label_textArea" for="finalCliente">Talentos Desarrollados</label>
+			<textarea name="finalCliente" id="finalCliente"></textarea>
+			<p class="verificacion verificacion_textarea" id="verificacion_finalCliente">✔</p>
+			</div>
+
+			<div>
+			<label class="label_input" for="urgencia">Urgencia</label>
+			<input type="range" list="urgencia">
+			</div>
+
+		<button type="submit" name="boton_final" class="boton_final">ENVIAR</button>
+		<button type="reset" class="boton_final">ELIMINAR</button>
+		</form>
+		</fieldset>	
+		
+	</footer>
+
+<script src="js_remoto.js"></script>
+</body>
+</html>

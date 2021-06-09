@@ -4,6 +4,17 @@ header {
 	position: fixed;
 	top: 0;
 	z-index: 1000;
+	font-family: "Permanent Marker", cursive;
+	font-size: calc(0.3em + 0.86vw); /* 18px */
+
+}
+
+/* NAV */
+.menu{
+	background-color: #f05811;
+	height: 3.2em;
+	top: 0;
+	width: 100%;
 }
 
 .header_cajalogo{
@@ -15,29 +26,46 @@ header {
 
 .header_logo{
 	display: inline-block;
-	width: 2.85em;
+	width: 90%;
 	height: 2.85em;
 	margin: 2px;
 }
 
 nav{
 	position: relative;
-	width: 70%;
+	width: 90%;
 	height: 3.2em;
 	float: right;
 }
 
+.nav_lista{
+	height: 3.2em;
+	float: right;
+	margin-right: 5%;
+}
+
 .nav_lista li{
-	margin-top: 0.8em;
-	font-size: calc(0.5em + 0.75vw); /* 18px */
 	list-style: none;
-	padding-left: 1em;
-}
-
-li{
 	display: inline-block;
+	margin: 0;
 }
 
+.nav_lista li a{
+	display: block;
+	position: relative;
+	height: 3.2em;
+	padding-top: 0.9em;
+	padding-left: 0.4em;
+	color:  #783f24;
+} 
+
+.nav_lista li a:hover{
+	background-color:  #de6a33;
+	color: #c9551f;
+}
+
+
+/* Cuerpo de la Pagina */
 body {
   background-color: white;
   background-repeat: repeat;
@@ -45,14 +73,7 @@ body {
  /* /home/silreon/Escritorio/programacionWeb/bg_foto.jpg */
 }
 
-/* NAV */
-.menu{
-	background-color: blue;
-	height: 3.2em;
-	top: 0;
-	opacity: 1;
-	width: 100%;
-}
+
 
 /* CajaInformacion */
 .cajaInformacion{
@@ -79,21 +100,22 @@ body {
 }
 
 .flecha{
-	font-size: calc(0.4em + 0.7vw);
+	font-size: calc(0.4em + 1vw);
 	position: absolute;
-	width: 12em;
-	height: 12em;
+	width: 10em;
+	height: 9em;
 	left: 39.4vw;
-	top: 17vh;
+	top: 5.65em;
 	opacity: .6;
 }
 
 .cajaimg_frase{
+	position: relative;
 	display: inline-block;
 	font-family: 'Permanent Marker', cursive;
 	font-size: calc(1em + 4.7vw); /* 80px */
 	color: #b32821;
-	margin-top: 2.3em;
+	top: 3em;
 	float: right;
 	text-align: center;
 	opacity: .7;
@@ -129,7 +151,7 @@ body {
 	position: relative;
 	background-position: center;
 	background-image: url("https://raw.githubusercontent.com/SilReon/programacionWeb/main/bg_div.png");/* /home/silreon/Escritorio/programacionWeb/bg_div.png */
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	padding-left: 1.5vw;
 	border-radius: 2em;
 }
@@ -187,6 +209,7 @@ body {
 /* Clases de cajaHabilidad */
 .cajaHabilidad{
 	height: 15em;
+	margin-top: 4em;
 }
 
 .cajaHabilidad--blanda{
@@ -201,7 +224,7 @@ body {
 	float: right;
 	display: inline-block;
 	margin-top: 2.1em;
-	height: 10.3rem;
+	height: 10.3em;
 	width: 49%;
 }
 
@@ -229,4 +252,9 @@ footer{
 a{
 	color: black;
 	text-decoration: none;
+	transition: color 0.15s;
+}
+
+.footer_caja--elemento a:hover{
+	color: #a18d8d;
 }
