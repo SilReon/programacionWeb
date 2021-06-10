@@ -6,34 +6,62 @@ header {
 	z-index: 1000;
 	font-family: "Permanent Marker", cursive;
 	font-size: calc(0.3em + 0.86vw); /* 18px */
-
 }
 
-/* NAV */
+/* MENU */
 .menu{
-	background-color: #f05811;
-	height: 3.2em;
-	top: 0;
 	width: 100%;
+	height: 3.2em;
+	background-color: #f05811;
+	top: 0;
+	overflow-wrap: break-word;
 }
 
+/* Caja de Logo */
 .header_cajalogo{
 	display: inline-block;
-  width: 5%;
-  text-align: center;
+	margin-left: 0.5em;
 	height: 3.2em;
 }
 
 .header_logo{
-	display: inline-block;
-	width: 90%;
+	display: block;
+	width: 2.85em;
 	height: 2.85em;
 	margin: 2px;
 }
 
+.redireccion_logo{
+	display: inline-block;
+	height: 3.2em;
+	box-sizing: border-box;
+	transition: all 0.15s;
+}
+
+.redireccion_logo:hover{
+	background-color:  #de6a33;
+}
+
+
+/* Caja del titulo */
+/*.caja_frase{
+	display: inline-block;
+	margin-left: 0.5em;
+	height: 3.2em;
+}
+
+.frase_logo{
+	display: block;
+	text-decoration: none;
+	box-sizing: border-box;
+	height: 3.2em;
+	padding-top: 0.6em;
+}*/
+
+/* NAV */
 nav{
 	position: relative;
-	width: 90%;
+	width: 70%;
 	height: 3.2em;
 	float: right;
 }
@@ -44,22 +72,29 @@ nav{
 	margin-right: 5%;
 }
 
-.nav_lista li{
+.nav_lista>li{
 	list-style: none;
 	display: inline-block;
 	margin: 0;
+	height: 3.2em;
 }
 
-.nav_lista li a{
+
+/* Elementos "a" */
+.nav_lista--elemento{
 	display: block;
 	position: relative;
 	height: 3.2em;
 	padding-top: 0.9em;
 	padding-left: 0.4em;
 	color:  #783f24;
-} 
+	background-color: transparent;
+	text-decoration: none;
+	transition: color 0.15s;
+	box-sizing: border-box;
+}
 
-.nav_lista li a:hover{
+.nav_lista--elemento:hover{
 	background-color:  #de6a33;
 	color: #c9551f;
 }
